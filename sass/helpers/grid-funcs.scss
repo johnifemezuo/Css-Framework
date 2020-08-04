@@ -32,7 +32,7 @@ Using display: grid;
 }
 
 @mixin createGridSpan($limit) {
-  @for $i from 1 to $limit {
+  @for $i from 1 to $limit+1 {
     .g-col-#{$i} {
       grid-column: span $i;
     }

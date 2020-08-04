@@ -3315,6 +3315,9 @@ Using display: grid;
 .g-col-11 {
   grid-column: span 11; }
 
+.g-col-12 {
+  grid-column: span 12; }
+
 .site {
   display: grid;
   grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
