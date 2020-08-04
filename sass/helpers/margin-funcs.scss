@@ -15,11 +15,11 @@ $positionMap: (
     
     @if $position == "l" {
       .ml-#{$current}{
-        margin-left: #{$current}px
+        margin-left: #{$current}px;
       } 
     } @else if $position == "r" {
       .mr-#{$current}{
-        margin-right: #{$current}px
+        margin-right:  #{$current}px
       } 
     }  @else if $position == "t" {
       .mt-#{$current}{
