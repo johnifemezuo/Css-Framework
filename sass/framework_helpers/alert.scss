@@ -1,0 +1,21 @@
+.alert_section{
+    width: 100%;
+    padding: 20px;
+
+    & div{
+        margin:25px 0px 25px 0px;
+    }
+}
+
+
+.alert_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    & .alert{
+        width: 40%;
+    }
+
+}
+

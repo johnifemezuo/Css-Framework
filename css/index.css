@@ -3963,6 +3963,57 @@ Using display: grid;
         color: gray; }
 
 /**
+|| ALERT SECTION
+*/
+.alert {
+  width: 40%;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 10s ease-in !important; }
+  .alert p {
+    width: 100%;
+    color: white;
+    padding-left: 15px; }
+  .alert span {
+    color: white; }
+  .alert i {
+    color: white;
+    cursor: pointer; }
+  .alert:hover {
+    color: gray; }
+
+.default_alert {
+  background-color: #444bf8; }
+
+.warning_alert {
+  background-color: #ec971f; }
+
+.success_alert {
+  background-color: #00c9a6; }
+
+.danger_alert {
+  background-color: #f12459; }
+
+.close {
+  display: none; }
+
+.alert_section {
+  width: 100%;
+  padding: 20px; }
+  .alert_section div {
+    margin: 25px 0px 25px 0px; }
+
+.alert_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .alert_container .alert {
+    width: 40%; }
+
+/**
 || Carousel SECTION
 */
 .slider_wrapper_tracker {
