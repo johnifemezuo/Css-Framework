@@ -3,9 +3,9 @@
 
     .section__btn_wrap{
         width:  100%;
-        padding: 20px;
+        padding: 50px;
 
-        @include mobile {
+        @include max_mobile {
           padding: 15px;
         }
     
@@ -17,7 +17,7 @@
            //  Responsivenes fo Tablet Size
 
         .btn_flex_wrap{
-          @include medium-desktop {
+          @include max_medium-desktop {
             display:block!important;
             grid-template-columns:unset!important;
           }  

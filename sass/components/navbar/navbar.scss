@@ -5,7 +5,7 @@
 	border-radius: 5px;
 	width: 100%;
 
-	@include medium-desktop {
+	@include min_medium-desktop {
 		border-radius: unset;
 	}
 }
@@ -16,14 +16,14 @@
 		width: 100%;
 		padding: 5px 0;
 
-		@include medium-desktop {
+		@include min_medium-desktop {
 			display: flex;
 			justify-content: space-between;
 			padding: 10px;
 			align-items: center;
 		}
 		.header_content_flex {
-			@include medium-desktop {
+			@include min_medium-desktop {
 				display: flex;
 				justify-content: space-between;
 			}
@@ -35,7 +35,7 @@
 		justify-content: space-between;
 		padding: 10px 25px;
 
-		@include medium-desktop {
+		@include min_medium-desktop {
 			all: unset;
 		}
 
@@ -48,7 +48,7 @@
 
 	/* Menu Bars styling here */
 	.menu {
-		@include medium-desktop {
+		@include min_medium-desktop {
 			display: none;
 		}
 		#bars {
@@ -91,7 +91,7 @@
 		font-size: 20px;
 		align-self: center;
 
-		@include medium-desktop {
+		@include min_medium-desktop {
 			display: none;
 		}
 	}
@@ -99,7 +99,7 @@
 	#nav {
 		padding: 0 45px;
 
-		@include medium-desktop {
+		@include min_medium-desktop {
 			padding: 0px 0px 0px 30px;
 			align-self: center;
 		}
@@ -109,13 +109,13 @@
 			padding: 0;
 			margin: 0;
 
-			@include medium-desktop {
+			@include min_medium-desktop {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 			}
 			.nav_ul_li {
-				@include medium-desktop {
+				@include min_medium-desktop {
 					padding: 0 10px;
 				}
 			}
@@ -132,7 +132,7 @@
 					font-size: 12px;
 				}
 
-				@include medium-desktop {
+				@include min_medium-desktop {
 					line-height: 0;
 				}
 				&:hover {
@@ -156,7 +156,7 @@
 				opacity: 0;
 				transform-origin: center;
 				
-				@include  medium-desktop{
+				@include  min_medium-desktop{
 					padding-top: 16px;
 
 				}
@@ -205,7 +205,7 @@
 		overflow: hidden;
 		transition: height 0.5s, opacity 0.5s ease-in-out;
 		opacity: 0;
-		@include medium-desktop {
+		@include min_medium-desktop {
 			all: unset;
 		}
 	}
@@ -214,7 +214,7 @@
 		overflow: hidden;
 		transition: height 0.5s, opacity 0.5s ease-in-out;
 		opacity: 1;
-		@include medium-desktop {
+		@include min_medium-desktop {
 			all: unset;
 		}
 	}
@@ -228,7 +228,7 @@
 		position: relative;
 		top: -100%;
 
-		@include medium-desktop {
+		@include min_medium-desktop {
 			all: unset;
 		}
 	}
@@ -247,7 +247,7 @@
 		flex-direction: column;
 
 	
-		@include medium-desktop {
+		@include min_medium-desktop {
 			padding: 0;
 			display: flex;
 			justify-content: space-between;
@@ -257,7 +257,7 @@
 
 		.search_icon {
 			display: none;
-			@include medium-desktop {
+			@include min_medium-desktop {
 				color: white;
 				display: block;
 				padding: 0 20px;

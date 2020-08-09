@@ -2,8 +2,12 @@
 
 .input_section{
     width: 100%;
-    background-color: #f6f6f6ad;
-    padding: 20px;
+    background-color: $section-color;
+    padding: 20px 50px;
+
+    @include max_mobile {
+        padding: 20px 15px;
+    }
 
     div{
         margin-bottom: 20px;
@@ -15,7 +19,7 @@
     max-width:300px;
     margin-right: 50px;
 
-    @include mobile {
+    @include max_mobile {
         margin-right: 0px;
     }
 }
@@ -24,7 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    @include mobile {
+    @include max_mobile {
         display: block;
     }
 }

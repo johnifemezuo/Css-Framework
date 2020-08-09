@@ -3,29 +3,48 @@
 $larger-desktop : 1500px;
 $medium-desktop : 1000px;
 $tablet : 769px;
-$mobile : 400px;
+$mobile : 441px;
 
 
-@mixin mobile {
+
+// DESKTOP VIEW START
+@mixin max_mobile {
     @media (max-width : $mobile) {
         @content;
     }
 }
 
-@mixin tablet {
+@mixin max_tablet {
+    @media (max-width : $tablet) {
+        @content;
+    }
+}
+
+@mixin max_medium-desktop {
+    @media (max-width : $medium-desktop) {
+        @content;
+    }
+}
+
+
+// MOBILE VIEW START
+@mixin min_mobile {
+    @media (min-width : $mobile) {
+        @content;
+    }
+}
+
+@mixin min_tablet {
     @media (min-width : $tablet) {
         @content;
     }
 }
 
-@mixin medium-desktop {
-    @media (min-width : $medium-desktop) {
+@mixin min_medium-desktop {
+    @media (max-width : $medium-desktop) {
         @content;
     }
 }
-
-
-
 
 
 

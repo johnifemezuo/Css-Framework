@@ -2,30 +2,34 @@
 @import '../media_query/media_query.scss';
 
 .wrapper {
-    margin: 20px;
+    padding: 50px;
+    // width: 100%;
+
+    @include max_mobile {
+       padding: 15px;
+   }
 }
 
 
 // SHOWCASE 
 
 .showcase_Area{
-    
-    height:40vh;
-
         &-img{
         background-image: url('/public/assets/img/bgg.jpg');
         width: 100%;
-        height:500px;
         background-repeat: no-repeat;
         background-size: cover; 
         background-position: center; 
         padding: 10px 0 ;
         position: relative;
-        margin-bottom: 70px;
+        height: 570px;
+        margin-bottom: 80px;
 
-        @include mobile {
-            height: 400px;
+         @include max_tablet {
+             margin-bottom: 0px;
         }
+       
+        
            &::after{
              content: '';
              position: absolute;
@@ -37,7 +41,7 @@
            }
        .creative_team{
            height: 400px;
-           margin-top: 100px;
+           margin: 120px auto;
            display: block!important;
            position: relative;
            width:  100%;
@@ -46,14 +50,6 @@
            color:$secondary-color;
            z-index: 1;
                      
-           @include mobile {
-               margin-top: 30px;
-               height: 200px;
-           }
-           
-           @include tablet {
-               display: none;
-           }
           
 
              .Ds_wrapper{
@@ -62,21 +58,21 @@
                  
                  h2 {
                     font-size: 40px;
-                    font-weight: 300;
+                    font-weight: 500;
                     font-family: 'poppins';
 
-                    @include mobile {
-                       font-size: 2.2rem;
-                    }
+                    // @include max_mobile {
+                    //    font-size: 2.2rem;
+                    // }
                  }
 
                  p{
                     font-size: 18px;
                     padding-top: 10px;
                     margin-bottom: 12px;
-                    @include mobile {
-                        font-size: 1.3rem;
-                     }
+                    // @include max_mobile {
+                    //     font-size: 1.3rem;
+                    //  }
                 }
                  .Ds{
                      background-color:  $primary-color;
@@ -89,7 +85,7 @@
                      width: 70px;
                      margin: 15px auto;
                      
-                     @include mobile {
+                     @include max_mobile {
                         font-size: 2.2rem;
                         height: 50px;
                         width: 50px;
@@ -103,8 +99,8 @@
                      align-items: center;
                      padding-top: 40px;
 
-                    //  Responsivenes fo Tablet Size
-                    @include tablet{
+                    //  Responsivenes fo max_Tablet Size
+                    @include max_tablet{
                         padding-top: 0px;
                     }
 
@@ -133,26 +129,7 @@
                          border-radius: 50%;
                          margin:0 10px;
                     }
-                    .bg-color {
-                        background-color: white;
-                    }
-                    
-                    .cards__wrapper {
-                        padding: 15px; 
-                        max-width: 1200px;
-                        margin: 30px;
-                    
-                       @include tablet {
-                                display: grid;
-                                grid-template-columns: repeat(2, 1fr);
-                                grid-gap: 20px;
-                       }
-                       @include medium-desktop {
-                        grid-template-columns: repeat(3, 1fr);
-                    }
-                    
-                    }
-                    
+                  
                     
                     .header {
                         color: rgb(12, 12, 12);
@@ -164,7 +141,7 @@
                         margin-left: 50px;
                         // padding: 16px 0 0 0 ;
                     
-                        @include mobile {
+                        @include max_mobile {
                             margin: 15px;
                         }
                     }
@@ -184,20 +161,23 @@
 }
 
 .cards__wrapper {
-    padding: 15px; 
-    max-width: 1200px;
-    margin: 30px;
-
-   @include tablet {
-            display: grid;
+        padding: 50px; 
+        max-width: 100%;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    
+      
+       @include max-tablet {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-   }
-   @include medium-desktop {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-}
+        }
+        @include max_mobile {
+            grid-template-columns: 1fr;
+            padding: 20px 15px;
+        }
+    
+    }
 
 
 
@@ -212,27 +192,118 @@
     margin-left: 50px;
     // padding: 16px 0 0 0 ;
 
-    @include mobile {
+    @include max_mobile {
         margin: 15px;
     }
 }
 
 
+// TYPOGRPAY
+.typography {
+    width: 100%;
+    padding: 50px;
+
+    @include max_mobile {
+            padding: 50px 15px;
+    }
+}
+
+.colors {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & div {
+        border-radius: 50%;
+        margin-right: 8px;
+        width: 100px;
+        height: 100px;
+      
+        @include max_mobile {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+.primary {
+    background-color: $primary-color;
+}
+.success {
+    background-color: $success-color;
+}
+.info {
+    background-color: $info-color;
+}
+.danger {
+    background-color: $danger-color;
+}
+.warning {
+    background-color: $warning-color;
+}
+.dark {
+    background-color: $dark-color;
+}
+.light {
+    background-color: $light-color;
+}
+
+.typo {
+    margin: 50px auto;
+
+    &_wrapper {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
 
 
+.typo_txt {
+    width: 500px;
+    @include max_mobile {
+        margin: 40px 0;
+    }
+}
+.paragraph {
+    margin-bottom: 15px;
 
+    &:first-child{
+        padding-bottom: 16px;
+    }
+}
 
+.links {
+    margin-top: 14px;
 
+    & a {
+        padding-right: 12px;
+        font-size: 1.1rem;
+    }
 
-
-
-
-
-
-
-
-
-
+    & .primary_txt {
+        color: $primary-color;
+    }
+    & .success_txt {
+        color: $success-color;
+    }
+    & .info_txt {
+        color: $info-color;
+    }
+    & .danger_txt {
+        color: $danger-color;
+    }
+    & .warning_txt {
+        color: $warning-color;
+    }
+    & .dark_txt {
+        color: $dark-color;
+    }
+    & .light_txt {
+        color: $light-color;
+    }
+}
 
 
 

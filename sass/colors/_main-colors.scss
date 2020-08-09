@@ -17,6 +17,7 @@ $light : #fff;
 $dark : #000;
 
 // primary color
+$primary:  #444bf8;
 $primary-color : #444bf8;
 $primary-color-hover: #262cee;
 $primary-focus : #7fbcff;
@@ -27,6 +28,7 @@ $success-color-hover:#07a78c;
 $success-focus : #93d3a1;
 
 // danger color
+$danger: #f12459;
 $danger-color: #f12459;
 $danger-hover:#dd0d44;
 $danger-outline:#ed99a1;
@@ -49,14 +51,40 @@ $border-hover : #b8b8b8;
 $border-outline : #b1b1b1;
 
 // dark color
+$dark-color: #111111;
+$dark-hover : #222;
 $light-gray: gray;
 $dark-focus: #999c9f;
-$dark-hover : #222;
-
+$light-color: #dddd;
 
 // font color
 $form-color : #959595;
 $placeholder-color : #afafaf;
+$para-color: rgb(82, 82, 82);
+$subtitle-color: #8d8c8c;
 
 $header_dark: #000;
 $header_success: #0c854b;
+
+
+//muted
+$muted : #8a8a8a;
+$section-color: #f6f6f6ad;
+
+
+// button-colors
+$btn-color : #1B6CA8;
+$lightGray-color: #F3F3F3;
+$sbtnText-color:#fff;
+$active-btn :#52A2DD;
+$btnHover: #52A2DD;
+$btnDisabled: #A5D3F5;;
+$btnDefaultColor: #f8f9fa;
+$btnDefaultColorHover: #dadada;
+$dark : #3C3A3A;
+
+// form-colors
+$text-color: #575d63;
+$placeholder-color: #696969;
+$shadow-color:#dadada;
+$transparent: transparent;

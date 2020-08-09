@@ -1,8 +1,9 @@
 /**
 Using display: grid;
 */
-@import "../sizes/major-sizes.scss";
 
+$major-spacing : .8rem;
+$maxWidth: 1400px;
 
 @mixin createGridCols($gridNums, $prefixer, $pieces) {
   @for $len from 0 to $gridNums+1 {

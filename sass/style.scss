@@ -9,8 +9,7 @@
 */
 
 // SIZE
-@import "./sizes/major-sizes.scss";
-
+@import './sizes/font_sizes.scss';
 
 // media screen
 @import './media_query/media_query.scss';
@@ -28,7 +27,6 @@
 
 //COLORS
 @import '../sass/colors/main-colors';
-@import '../sass/colors/button-colors';
 
 
 @import "./components/margins/bigger-margins";
@@ -63,7 +61,6 @@
 || INPUT SECTION
 */
 @import "./framework_helpers/input_helper.scss";
-@import "../sass/colors/form-colors.scss";
 @import "./components/inputs/input.scss";
 
 /**
