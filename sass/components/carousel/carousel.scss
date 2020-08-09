@@ -1,20 +1,23 @@
 
 .slider_wrapper_tracker{
-    padding: 10px 0;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    background-color: #f1f1f1;
+    padding: 50px;
+    background-color: $section-color;
+    width: 100%;
+
+    @include max_mobile {
+        padding: 15px;
+    }
 
 
     .slider_content_tracker{
         position: relative;
-        max-width: 1000px;
+        width: 100%;
         margin: 30px auto ;
         overflow-x: hidden;
         height: 300px;
         box-sizing: border-box;
         background-color: rgb(55, 55, 206);
-        margin: 10px;
+        // margin: 10px;
         border-radius: 9px;
     }
     .slide_container{
@@ -42,14 +45,25 @@
         .caption{
             position: relative;
             z-index: 1;
-            width: 100%;
+            width: 300px;
             padding: 30px;
-            width: 50%;
-            margin: 100px auto;
+            width: 100%;
+            margin: 50px auto;
             color: white;
+
+        @include max_tablet{
+            margin: 50px;
+        }
 
             h1 {
                 font-size: 25px;
+
+                @include max_mobile {
+                    font-size: 15px;
+                }
+            }
+            p {
+                font-size: 1rem;
             }
         }
        

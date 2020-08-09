@@ -1,5 +1,10 @@
 
 
+@mixin background-setting {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .c-txt {
     text-align: center;
     color: white;
@@ -9,15 +14,15 @@
 
 
 
-.gallery {
+.scroll_snap {
     position: relative;
-    max-width: 1000px;
+    max-width: 1050px;
     padding: 0 10;
     margin: 0 auto;
-    background: rgb(226, 171, 171);
+    background: rgb(235, 235, 235);
   }
   
-  .gallery_scroller {
+  .scroller {
      /* snap mandatory on horizontal axis  */
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
@@ -31,22 +36,22 @@
   }
   
   
-  .gallery_scroller div{
+  .scroller div{
      /* snap align center  */
     scroll-snap-align: center;
     margin: 10px;
     position: relative;
     object-fit: cover;
   }
-  .gallery_scroller div img{
+  .scroller div img{
    object-fit: cover;
    margin: 20px;   
    width: 100%;
    min-height: 95%;
  }
   
-  .gallery_scroller div.colored_card {
-    min-width: 50%;
+  .scroller div.scroll_card {
+    min-width: 40%;
     min-height: 95%;
     border-radius: 10px;
    }
@@ -54,14 +59,14 @@
 
 
 
-  .gallery_scroller > div.colored_card:nth-of-type(1) { background-color: #e8eaf6; }
-  .gallery_scroller > div.colored_card:nth-of-type(2) { background-color: #c5cae9; }
-  .gallery_scroller > div.colored_card:nth-of-type(3) { background-color: #9fa8da; }
-  .gallery_scroller > div.colored_card:nth-of-type(4) { background-color: #7986cb; }
-  .gallery_scroller > div.colored_card:nth-of-type(5) { background-color: #5c6bc0; }
-  .gallery_scroller > div.colored_card:nth-of-type(6) { background-color: #3f51b5; }
-  .gallery_scroller > div.colored_card:nth-of-type(7) { background-color: #3949ab; }
-  .gallery_scroller > div.colored_card:nth-of-type(8) { background-color: #303f9f; }
-  .gallery_scroller > div.colored_card:nth-of-type(9) { background-color: #283593; }
-  .gallery_scroller > div.colored_card:nth-of-type(10) { background-color: #1a237e; }
+  .scroller > div.scroll_card:nth-of-type(1) { background-color: #c5cae9; }
+  .scroller > div.scroll_card:nth-of-type(2) { background-color: #c5cae9; }
+  .scroller > div.scroll_card:nth-of-type(3) { background-color: #9fa8da; }
+  .scroller > div.scroll_card:nth-of-type(4) { background-color: #7986cb; }
+  .scroller > div.scroll_card:nth-of-type(5) { background-color: #5c6bc0; }
+  .scroller > div.scroll_card:nth-of-type(6) { background-color: #3f51b5; }
+  .scroller > div.scroll_card:nth-of-type(7) { background-color: #3949ab; }
+  .scroller > div.scroll_card:nth-of-type(8) { background-color: #303f9f; }
+  .scroller > div.scroll_card:nth-of-type(9) { background-color: #283593; }
+  .scroller > div.scroll_card:nth-of-type(10) { background-color: #1a237e; }
   

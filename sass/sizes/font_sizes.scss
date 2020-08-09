@@ -1,37 +1,68 @@
 
+@import '../colors/main-colors';
 // Font sizes for different text element;
 
 // h1
-.h1 {
-    font-size: 2rem;
+.header1 {
+    font-size: 65px;
+    font-weight: 300;
+
 }
 
 //h2
-.h2 {
-    font-size: 1.8rem;
+.header2 {
+    font-size: 55px;
+    font-weight: 300;
+
 }
 
 //h3
-.h3 {
-    font-size: 1.4rem;
+.header3 {
+    font-size:45px ;
+    font-weight: 300;
 }
 
 //h4
-.h4 {
-    font-size: 1rem;
+.header4 {
+    font-size: 35px;
+    font-weight: 300;
+
 }
 
-p{
-    display: nonw;
+//h5
+.header5 {
+    font-size: 25px;
+    font-weight: 300;
 }
+
+//h6
+.header6 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
 
 // light text
 .lgt_txt {
     font-weight: 100;
 }
 
+p {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 1rem;
+}
 
 
+.normal_txt {
+    color: inherit;
+    font-size: 1rem;
+}
+
+.muted {
+    color: $muted;
+    font-size: 1rem;
+}
 
 // BORDER RADIUS 
 

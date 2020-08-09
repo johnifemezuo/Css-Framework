@@ -1,20 +1,12 @@
-
 @import "../media_query/media_query.scss";
 
 .input_section{
     width: 100%;
-    background-color: #f6f6f6ad;
-    margin-top: 50px;
-    padding: 20px;
-    margin-bottom: 100px;
-    
-    &-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
-        padding: 20px 0;
-        margin: 0px auto;
+    background-color: $section-color;
+    padding: 20px 50px;
+
+    @include max_mobile {
+        padding: 20px 15px;
     }
 
     div{
@@ -27,13 +19,16 @@
     max-width:300px;
     margin-right: 50px;
 
-    @include mobile {
+    @include max_mobile {
         margin-right: 0px;
     }
 }
+
 .input_container {
     display: flex;
-    @include mobile {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @include max_mobile {
         display: block;
     }
 }

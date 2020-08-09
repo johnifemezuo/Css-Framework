@@ -1,0 +1,316 @@
+
+@import '../media_query/media_query.scss';
+
+.wrapper {
+    padding: 50px;
+    // width: 100%;
+
+    @include max_mobile {
+       padding: 15px;
+   }
+}
+
+
+// SHOWCASE 
+
+.showcase_Area{
+        &-img{
+        background-image: url('/public/assets/img/bgg.jpg');
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center; 
+        padding: 10px 0 ;
+        position: relative;
+        height: 570px;
+        margin-bottom: 80px;
+
+         @include max_tablet {
+             margin-bottom: 0px;
+        }
+       
+        
+           &::after{
+             content: '';
+             position: absolute;
+             top: 0;
+             height: 100%;
+             width: 100%;
+             background: linear-gradient(100.56deg, rgba(0, 0, 0, 0.445) 26%, rgba(0, 0, 0, 0.445) 26%);
+            //  background: linear-gradient(100.56deg, rgba(27, 104, 174, 0.73) 26%, #D100A3 104.2%);
+           }
+       .creative_team{
+           height: 400px;
+           margin: 120px auto;
+           display: block!important;
+           position: relative;
+           width:  100%;
+           background-color: transparent;
+           font-family: 'Poppins';
+           color:$secondary-color;
+           z-index: 1;
+                     
+          
+
+             .Ds_wrapper{
+                 text-align: center;
+                 padding: 20px;
+                 
+                 h2 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    font-family: 'poppins';
+
+                    // @include max_mobile {
+                    //    font-size: 2.2rem;
+                    // }
+                 }
+
+                 p{
+                    font-size: 18px;
+                    padding-top: 10px;
+                    margin-bottom: 12px;
+                    // @include max_mobile {
+                    //     font-size: 1.3rem;
+                    //  }
+                }
+                 .Ds{
+                     background-color:  $primary-color;
+                     padding: 10px;
+                     display:grid;
+                     place-content: center;
+                     border-radius: 50%;
+                     font-size: 35px;
+                     height: 70px;
+                     width: 70px;
+                     margin: 15px auto;
+                     
+                     @include max_mobile {
+                        font-size: 2.2rem;
+                        height: 50px;
+                        width: 50px;
+                     }
+                 }
+             }
+ 
+                 &-design-team {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     padding-top: 40px;
+
+                    //  Responsivenes fo max_Tablet Size
+                    @include max_tablet{
+                        padding-top: 0px;
+                    }
+
+                     div{
+                         position: relative;
+
+                         &:after{
+                             content: '';
+                             position: absolute;
+                             background: #FFFFFF;
+                             border-radius: 1.5px;
+                             width: 110px;
+                             height: 2px;
+                             bottom: 2px;
+                             left:-20px;
+                         }
+                     }
+ 
+                     p {
+                         font-size: 16px;
+                      }
+           
+                      img {
+                         height: 40px;
+                         width: 40px;
+                         border-radius: 50%;
+                         margin:0 10px;
+                    }
+                  
+                    
+                    .header {
+                        color: rgb(12, 12, 12);
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        // padding: 0px 0px 10px 0px;
+                    }
+                    .head {
+                        margin-left: 50px;
+                        // padding: 16px 0 0 0 ;
+                    
+                        @include max_mobile {
+                            margin: 15px;
+                        }
+                    }
+                    
+                                     }
+ 
+        }
+      }
+    
+   }
+
+
+
+
+   .bg-color {
+    background-color: white;
+}
+
+.cards__wrapper {
+        padding: 50px; 
+        max-width: 100%;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    
+      
+       @include max-tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include max_mobile {
+            grid-template-columns: 1fr;
+            padding: 20px 15px;
+        }
+    
+    }
+
+
+
+// CARD HELPER
+.header {
+    color: rgb(12, 12, 12);
+    font-size: 1.6rem;
+    font-weight: 400;
+    // padding: 0px 0px 10px 0px;
+}
+.head {
+    margin-left: 50px;
+    // padding: 16px 0 0 0 ;
+
+    @include max_mobile {
+        margin: 15px;
+    }
+}
+
+
+// TYPOGRPAY
+.typography {
+    width: 100%;
+    padding: 50px;
+
+    @include max_mobile {
+            padding: 50px 15px;
+    }
+}
+
+.colors {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & div {
+        border-radius: 50%;
+        margin-right: 8px;
+        width: 100px;
+        height: 100px;
+      
+        @include max_mobile {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+.primary {
+    background-color: $primary-color;
+}
+.success {
+    background-color: $success-color;
+}
+.info {
+    background-color: $info-color;
+}
+.danger {
+    background-color: $danger-color;
+}
+.warning {
+    background-color: $warning-color;
+}
+.dark {
+    background-color: $dark-color;
+}
+.light {
+    background-color: $light-color;
+}
+
+.typo {
+    margin: 50px auto;
+
+    &_wrapper {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+
+.typo_txt {
+    width: 500px;
+    @include max_mobile {
+        margin: 40px 0;
+    }
+}
+.paragraph {
+    margin-bottom: 15px;
+
+    &:first-child{
+        padding-bottom: 16px;
+    }
+}
+
+.links {
+    margin-top: 14px;
+
+    & a {
+        padding-right: 12px;
+        font-size: 1.1rem;
+    }
+
+    & .primary_txt {
+        color: $primary-color;
+    }
+    & .success_txt {
+        color: $success-color;
+    }
+    & .info_txt {
+        color: $info-color;
+    }
+    & .danger_txt {
+        color: $danger-color;
+    }
+    & .warning_txt {
+        color: $warning-color;
+    }
+    & .dark_txt {
+        color: $dark-color;
+    }
+    & .light_txt {
+        color: $light-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -9,12 +9,16 @@
 */
 
 // SIZE
-@import "./sizes/major-sizes.scss";
+@import './sizes/font_sizes.scss';
 
+// media screen
+@import './media_query/media_query.scss';
+
+// Main-color
+@import "./colors/main-colors";
 
 // header.scss
 @import './components/navbar/navbar.scss';
-
 
 // MARGIN AND PADDINGS
 @import "./utils/margin.scss";
@@ -23,7 +27,6 @@
 
 //COLORS
 @import '../sass/colors/main-colors';
-@import '../sass/colors/button-colors';
 
 
 @import "./components/margins/bigger-margins";
@@ -32,7 +35,7 @@
 /**
   Button SECTIONS HELPERS
 **/
-@import './helpers/button_helper.scss';
+@import './framework_helpers/button_helper.scss';
 
 /**
    GRID SECTIONS
@@ -40,11 +43,6 @@
 @import "./utils/grids.scss";
 @import "./utils/grid_helper.scss";
 
-/**
-|| Showcase image  SECTIONS
-**/
-@import '../sass/helpers/showcase__Area';
-@import '../sass/helpers/Component';
 
 /**
 // Border radius SECTIONS
@@ -55,14 +53,13 @@
 /**
 || Tooltips SECTIONS
 **/
-@import './helpers/TooltipsHelper.scss';
+@import './framework_helpers/TooltipsHelper.scss';
 @import './components/Tooltips/DefaultTooltips.scss';
 @import './components/Tooltips/arrowTooltips.scss';
 /**
 || INPUT SECTION
 */
-@import "./helpers/input_helper.scss";
-@import "../sass/colors/form-colors.scss";
+@import "./framework_helpers/input_helper.scss";
 @import "./components/inputs/input.scss";
 
 
@@ -81,9 +78,11 @@
 // CARD SECTION
 */
 @import './components/cards/card.scss';
-@import './helpers/card_helper.scss';
-@import './media_query/media_query.scss';
 
 
 
 @import './reset/reset';
+
+
+// framework helpers
+@import './framework_helpers/homepage.scss'

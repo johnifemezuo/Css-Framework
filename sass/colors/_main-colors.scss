@@ -1,3 +1,5 @@
+
+
 $black-color: black;
 $secondary-color: white;
 $component-color : #1B6CA8;
@@ -8,33 +10,81 @@ $formTextLightGrey-color :#696969;
 $formTextLightGrey-border:#999999;
 $formTextLightGrey-bg:#F3F3F3;
 
+// $light-color: #F3F3F3;
+
+// normal color
+$light : #fff;
+$dark : #000;
+
+// primary color
+$primary:  #444bf8;
 $primary-color : #444bf8;
 $primary-color-hover: #262cee;
+$primary-focus : #7fbcff;
 
-$light-color: #F3F3F3;
+// success color
 $success-color: #00c9a6;
 $success-color-hover:#07a78c;
+$success-focus : #93d3a1;
 
+// danger color
+$danger: #f12459;
 $danger-color: #f12459;
 $danger-hover:#dd0d44;
 $danger-outline:#ed99a1;
+$danger-focus :#ed99a1;
 
-
+// info color
 $info-color: #2dd2f6;
 $info-hover-color:#0fb4da;
+$info-focus : #45b7d1;
 
+// warning color
 $warning-color:#ec971f;
 $warning-hover-color: #d6830d;
 $warning-outline:#f6d9b0;
+$warning-focus: #ffe082;
 
-$border-color : #d3d5db;
+// border color
+$border-color : #b1b2b6;
 $border-hover : #b8b8b8;
-$border-outline : #d6d5d5;
+$border-outline : #b1b1b1;
 
+// dark color
+$dark-color: #111111;
+$dark-hover : #222;
 $light-gray: gray;
-$dark-outline: #999c9f;
+$dark-focus: #999c9f;
+$light-color: #dddd;
+
+// font color
+$form-color : #959595;
+$placeholder-color : #afafaf;
+$para-color: rgb(82, 82, 82);
+$subtitle-color: #8d8c8c;
+
+$header_dark: #000;
+$header_success: #0c854b;
 
 
-.primary {
-    color: $primary-color;
-}
+//muted
+$muted : #8a8a8a;
+$section-color: #f6f6f6ad;
+
+
+// button-colors
+$btn-color : #1B6CA8;
+$lightGray-color: #F3F3F3;
+$sbtnText-color:#fff;
+$active-btn :#52A2DD;
+$btnHover: #52A2DD;
+$btnDisabled: #A5D3F5;;
+$btnDefaultColor: #f8f9fa;
+$btnDefaultColorHover: #dadada;
+$dark : #3C3A3A;
+
+// form-colors
+$text-color: #575d63;
+$placeholder-color: #696969;
+$shadow-color:#dadada;
+$transparent: transparent;
