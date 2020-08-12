@@ -4151,7 +4151,7 @@ Using display: grid;
     bottom: 20px; }
     .slider_wrapper_tracker .carousel_btn_wrapper button {
       display: block;
-      border: 1px solid #a5a5a5;
+      border: 2px solid white;
       outline: none;
       width: 50px;
       border-radius: 50%;
@@ -4166,6 +4166,23 @@ Using display: grid;
 
 .color1 {
   background-color: red; }
+
+.indicator_wrapper {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  padding: 20px; }
+
+.indicator_wrapper .indicator {
+  background-color: white;
+  margin: 4px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  outline: none; }
+
+.indicator_wrapper .current {
+  background-color: #f12459; }
 
 .c-txt {
   text-align: center;
