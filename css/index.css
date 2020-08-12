@@ -76,14 +76,16 @@ p {
 .br12 {
   border-radius: 12px; }
 
-.dark_header, .success_header {
+.dark_header,
+.success_header {
   background: #000;
   height: auto;
   position: relative;
   border-radius: 5px;
   width: 100%; }
   @media (min-width: 1000px) {
-    .dark_header, .success_header {
+    .dark_header,
+    .success_header {
       border-radius: unset; } }
 
 .success_header {
@@ -96,6 +98,7 @@ p {
     .header_content {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 10px;
       align-items: center; } }
   @media (min-width: 1000px) {
@@ -173,7 +176,7 @@ p {
       #nav .nav_ul .nav_ul_li {
         padding: 0 10px; } }
     #nav .nav_ul .nav_ul_li a {
-      font-family: 'Poppins';
+      font-family: "Poppins";
       font-style: normal;
       font-weight: normal;
       font-size: 1.2em;
@@ -3950,7 +3953,7 @@ Using display: grid;
   background-color: #fff;
   letter-spacing: 1px;
   font-family: inherit;
-  border: 1px solid #b1b2b6;
+  border: 1px solid #444bf8;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .form_input::placeholder {
     color: #696969;
@@ -3963,7 +3966,7 @@ Using display: grid;
   align-items: center;
   justify-content: center;
   padding: 0px;
-  border: 1px solid #b1b2b6;
+  border: 1px solid #444bf8;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -3974,11 +3977,11 @@ Using display: grid;
   .input_wrap .form_input {
     border: none; }
     .input_wrap .form_input:focus {
-      box-shadow: 0px 0px 1px 1.5px #93d3a1; }
+      box-shadow: 0px 0px 1px 1.5px rgba(68, 75, 248, 0.7); }
   .input_wrap span {
     padding: 0px 12px; }
     .input_wrap span i {
-      color: #b1b2b6;
+      color: #444bf8;
       font-size: 18px;
       transition: color 0.15s ease-in-out;
       cursor: pointer; }
@@ -3992,7 +3995,7 @@ Using display: grid;
   justify-content: center;
   padding: 0px;
   border-radius: 60px;
-  border: 1px solid #b1b2b6;
+  border: 1px solid #444bf8;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -4004,11 +4007,11 @@ Using display: grid;
     border: none;
     border-radius: 60px; }
     .rounded_input input:focus {
-      box-shadow: 0px 0px 1px 1.5px #93d3a1; }
+      box-shadow: 0px 0px 1px 1.5px rgba(68, 75, 248, 0.7); }
   .rounded_input span {
     padding: 0px 15px; }
     .rounded_input span i {
-      color: #b1b2b6;
+      color: #444bf8;
       font-size: 18px;
       transition: color 0.15s ease-in-out;
       cursor: pointer; }
@@ -4020,20 +4023,22 @@ Using display: grid;
   width: auto;
   align-items: center;
   justify-content: center;
-  border: 1px solid #b1b2b6;
-  border-radius: 0;
+  border: 1px solid #444bf8;
+  border-radius: none !important;
   border-top: none;
   border-left: none;
   border-right: none; }
   .line_input input {
     border: none;
-    background-color: transparent; }
+    background-color: transparent;
+    border-bottom: 1px solid transparent; }
     .line_input input:focus {
-      border-bottom: 1px solid #93d3a1; }
+      border-radius: 0px;
+      border-bottom: 1px solid rgba(68, 75, 248, 0.7); }
   .line_input span {
     padding: 0px 12px; }
     .line_input span i {
-      color: #b1b2b6;
+      color: #444bf8;
       font-size: 18px;
       transition: color 0.15s ease-in-out;
       cursor: pointer; }

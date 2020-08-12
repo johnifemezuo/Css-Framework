@@ -25,6 +25,7 @@ $dark: #000;
 // primary color
 $primary: #444bf8;
 $primary-color: #444bf8;
+$primary-color-light: rgba(68, 75, 248, 0.7);
 $primary-color-hover: #262cee;
 $primary-focus: #7fbcff;
 
@@ -92,3 +93,5 @@ $text-color: #575d63;
 $placeholder-color: #696969;
 $shadow-color: #dadada;
 $transparent: transparent;
+$input-border-default: $primary-color;
+$input-border-default-light: $primary-color-light ;

@@ -1,142 +1,143 @@
 // INPUT MIXINS
 @mixin border {
-    border: 1px solid $border-color; 
+  border: 1px solid $input-border-default;
 }
 
 @mixin transition {
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 // DEFAULT INPUT
 
-.form_input  {
-    width: 100%;
-    border-radius: 3px;
-    display: block;
-    background-clip: padding-box;
-    padding: 10px;
-    line-height: 1.5;
-    color: $light-gray;
-    font-weight: 300;
-    background-color: $light;
-    letter-spacing: 1px;
-    font-family: inherit;
-    @include border;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.form_input {
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+  background-clip: padding-box;
+  padding: 10px;
+  line-height: 1.5;
+  color: $light-gray;
+  font-weight: 300;
+  background-color: $light;
+  letter-spacing: 1px;
+  font-family: inherit;
+  @include border;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-    
-    &::placeholder {
-        color: $placeholder-color;
-        letter-spacing: 1px;
-        padding-left: 2px;
-    }
+  &::placeholder {
+    color: $placeholder-color;
+    letter-spacing: 1px;
+    padding-left: 2px;
+  }
 }
 
-// Square Input 
+// Square Input
 .input_wrap {
-    display: flex;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    @include border;
-    @include default_transition();
-    border-radius: 3px;
-    background-color: transparent;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  @include border;
+  @include default_transition();
+  border-radius: 3px;
+  background-color: transparent;
 
-    & .form_input {
-        border: none;
+  & .form_input {
+    border: none;
 
-        &:focus {
-            box-shadow:0px 0px 1px 1.5px $success-focus; 
-        }
+    &:focus {
+      box-shadow: 0px 0px 1px 1.5px $input-border-default-light;
     }
-    & span {
-        padding:0px 12px;
+  }
+  & span {
+    padding: 0px 12px;
 
-        & i {
-            color: $border-color;
-            font-size: 18px;
-            transition: color 0.15s ease-in-out;
-            cursor : pointer;
+    & i {
+      color: $input-border-default;
+      font-size: 18px;
+      transition: color 0.15s ease-in-out;
+      cursor: pointer;
 
-            &:hover {
-                color:$light-gray;
-            }
-        }
-    }  
-  
+      &:hover {
+        color: $light-gray;
+      }
+    }
+  }
 }
 
 // Rounded Input
 .rounded_input {
-    display: flex;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  border-radius: 60px;
+  @include border;
+  @include default_transition();
+  border-radius: 60px;
+  background-color: transparent;
+
+  & input {
+    border: none;
     border-radius: 60px;
-    @include border;
-    @include default_transition();
-    border-radius: 60px;
-    background-color: transparent;
 
-    & input {
-        border: none;
-        border-radius: 60px;
-
-        &:focus {
-            box-shadow:0px 0px 1px 1.5px $success-focus; 
-        }
+    &:focus {
+      box-shadow: 0px 0px 1px 1.5px $input-border-default-light;
     }
-    & span {
-        padding:0px 15px;
+  }
+  & span {
+    padding: 0px 15px;
 
-        & i {
-            color: $border-color;
-            font-size: 18px;
-            transition: color 0.15s ease-in-out;
-            cursor : pointer;
+    & i {
+      color: $input-border-default;
+      font-size: 18px;
+      transition: color 0.15s ease-in-out;
+      cursor: pointer;
 
-            &:hover {
-                color:$light-gray;
-            }
-        }
+      &:hover {
+        color: $light-gray;
+      }
     }
+  }
 }
 
 //Line Input
 
-.line_input{
-    display: flex;
-        width: auto;
-        align-items: center;
-        justify-content: center;
-        @include border();
-        border-radius: 0;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        input{
-            border: none;
-            background-color: $transparent;
-        &:focus {
-            // box-shadow:-1px 2px -1px 1.5px $success-focus; 
-            border-bottom: 1px solid $success-focus;
-        }
+.line_input {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  @include border();
+  border-radius: none !important;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  input {
+    border: none;
+    background-color: $transparent;
+    border-bottom: 1px solid transparent;
+
+    &:focus {
+      // box-shadow:-1px 2px -1px 1.5px $success-focus;
+      border-radius: 0px;
+      border-bottom: 1px solid $input-border-default-light;
     }
-    & span {
-        padding:0px 12px;
+  }
+  & span {
+    padding: 0px 12px;
 
-        & i {
-            color: $border-color;
-            font-size: 18px;
-            transition: color 0.15s ease-in-out;
-            cursor : pointer;
+    & i {
+      color: $input-border-default;
+      font-size: 18px;
+      transition: color 0.15s ease-in-out;
+      cursor: pointer;
 
-            &:hover {
-                color:$light-gray;
-            }
-        }
-    } 
+      &:hover {
+        color: $light-gray;
+      }
+    }
+  }
 }
