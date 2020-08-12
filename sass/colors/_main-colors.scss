@@ -1,90 +1,97 @@
-
-
 $black-color: black;
 $secondary-color: white;
-$component-color : #1B6CA8;
-$lightGray-color: #F3F3F3;
-$formBorderAqua-color :#A5D3F5;
-$formTextAqua-color : #52A2DD;
-$formTextLightGrey-color :#696969;
-$formTextLightGrey-border:#999999;
-$formTextLightGrey-bg:#F3F3F3;
+$component-color: #1b6ca8;
+$lightGray-color: #f3f3f3;
+$formBorderAqua-color: #a5d3f5;
+$formTextAqua-color: #52a2dd;
+$formTextLightGrey-color: #696969;
+$formTextLightGrey-border: #999999;
+$formTextLightGrey-bg: #f3f3f3;
 
 // $light-color: #F3F3F3;
 
+// General Color
+
+$elevateGray: rgb(219, 219, 219);
+$elevatePrimary: rgb(219, 219, 219);
+$elevateSuccess: rgb(219, 219, 219);
+$elevateInfo: rgb(219, 219, 219);
+$elevateDanger: rgb(219, 219, 219);
+
 // normal color
-$light : #fff;
-$dark : #000;
+$light: #fff;
+$dark: #000;
 
 // primary color
-$primary:  #444bf8;
-$primary-color : #444bf8;
+$primary: #444bf8;
+$primary-color: #444bf8;
+$primary-color-light: rgba(68, 75, 248, 0.7);
 $primary-color-hover: #262cee;
-$primary-focus : #7fbcff;
+$primary-focus: #7fbcff;
 
 // success color
 $success-color: #00c9a6;
-$success-color-hover:#07a78c;
-$success-focus : #93d3a1;
+$success-color-hover: #07a78c;
+$success-focus: #93d3a1;
 
 // danger color
 $danger: #f12459;
 $danger-color: #f12459;
-$danger-hover:#dd0d44;
-$danger-outline:#ed99a1;
-$danger-focus :#ed99a1;
+$danger-hover: #dd0d44;
+$danger-outline: #ed99a1;
+$danger-focus: #ed99a1;
 
 // info color
 $info-color: #2dd2f6;
-$info-hover-color:#0fb4da;
-$info-focus : #45b7d1;
+$info-hover-color: #0fb4da;
+$info-focus: #45b7d1;
 
 // warning color
-$warning-color:#ec971f;
+$warning-color: #ec971f;
 $warning-hover-color: #d6830d;
-$warning-outline:#f6d9b0;
+$warning-outline: #f6d9b0;
 $warning-focus: #ffe082;
 
 // border color
-$border-color : #b1b2b6;
-$border-hover : #b8b8b8;
-$border-outline : #b1b1b1;
-
+$border-color: #b1b2b6;
+$border-hover: #b8b8b8;
+$border-outline: #b1b1b1;
+$border-outline-light: #cccbcb;
 // dark color
 $dark-color: #111111;
-$dark-hover : #222;
+$dark-hover: #222;
 $light-gray: gray;
 $dark-focus: #999c9f;
 $light-color: #dddd;
 
 // font color
-$form-color : #959595;
-$placeholder-color : #afafaf;
-$para-color: rgb(82, 82, 82);
+$form-color: #959595;
+$placeholder-color: #afafaf;
+$para-color: #444444;
 $subtitle-color: #8d8c8c;
 
 $header_dark: #000;
 $header_success: #0c854b;
 
-
 //muted
-$muted : #8a8a8a;
+$muted: #8a8a8a;
 $section-color: #f6f6f6ad;
 
-
 // button-colors
-$btn-color : #1B6CA8;
-$lightGray-color: #F3F3F3;
-$sbtnText-color:#fff;
-$active-btn :#52A2DD;
-$btnHover: #52A2DD;
-$btnDisabled: #A5D3F5;;
+$btn-color: #1b6ca8;
+$lightGray-color: #f3f3f3;
+$sbtnText-color: #fff;
+$active-btn: #52a2dd;
+$btnHover: #52a2dd;
+$btnDisabled: #a5d3f5;
 $btnDefaultColor: #f8f9fa;
 $btnDefaultColorHover: #dadada;
-$dark : #3C3A3A;
+$dark: #3c3a3a;
 
 // form-colors
 $text-color: #575d63;
 $placeholder-color: #696969;
-$shadow-color:#dadada;
+$shadow-color: #dadada;
 $transparent: transparent;
+$input-border-default: $primary-color;
+$input-border-default-light: $primary-color-light ;

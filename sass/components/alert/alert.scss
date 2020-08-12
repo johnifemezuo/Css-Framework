@@ -1,0 +1,47 @@
+.alert{
+    width: 40%;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 10s ease-in !important;
+
+    & p{
+        width: 100%;
+        color: $secondary_color;
+        padding-left: 15px;
+    }
+    & span{
+        color: $secondary_color;
+    }
+
+    & i{
+        color: $secondary_color;
+        cursor: pointer;
+    }
+
+    &:hover{
+        color: $light-gray;
+    }
+}
+
+.default_alert{
+    background-color: $primary_color;
+}
+
+.warning_alert{
+    background-color: $warning_color;
+}
+
+.success_alert{
+    background-color: $success_color;
+}
+
+.danger_alert{
+    background-color: $danger_color;
+}
+
+ .close{
+    display: none;
+ }

@@ -56,12 +56,19 @@
 @import './framework_helpers/TooltipsHelper.scss';
 @import './components/Tooltips/DefaultTooltips.scss';
 @import './components/Tooltips/arrowTooltips.scss';
+
 /**
 || INPUT SECTION
 */
 @import "./framework_helpers/input_helper.scss";
 @import "./components/inputs/input.scss";
 
+/**
+|| ALERT SECTION
+*/
+
+@import "./components/alert/alert.scss";
+@import "./framework_helpers/alert.scss";
 
 /**
 || Carousel SECTION
@@ -85,4 +92,4 @@
 
 
 // framework helpers
-@import './framework_helpers/homepage.scss'
+@import './framework_helpers/homepage.scss';

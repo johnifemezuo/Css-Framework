@@ -21,7 +21,7 @@ $mobile : 441px;
 }
 
 @mixin max_medium-desktop {
-    @media (max-width : $medium-desktop) {
+    @media (min-width : $medium-desktop) {
         @content;
     }
 }
@@ -41,7 +41,7 @@ $mobile : 441px;
 }
 
 @mixin min_medium-desktop {
-    @media (max-width : $medium-desktop) {
+    @media (min-width : $medium-desktop) {
         @content;
     }
 }
