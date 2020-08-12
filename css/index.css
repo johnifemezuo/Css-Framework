@@ -3328,14 +3328,15 @@ p {
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
-  font-size: 98%;
-  font-variant: 1.2rem;
-  padding: 0;
+  padding: 0px;
   margin: 0; }
 
 body {
   font-family: 'Poppins';
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 100%;
+  font-variant: 1rem;
+  color: #444444; }
 
 .full_w {
   width: 100%; }
@@ -3349,7 +3350,7 @@ button {
 .btn {
   box-sizing: border-box;
   display: inline-block;
-  padding: .70rem 1rem;
+  padding: 0.7rem 1rem;
   outline: none;
   border: 1px solid transparent;
   font-size: 1rem;
@@ -3357,7 +3358,7 @@ button {
   line-height: 1.5;
   margin: 0;
   transition: 0.15s ease-in-out;
-  border-radius: 0.35rem;
+  border-radius: 6px;
   cursor: pointer;
   appearance: button;
   -webkit-appearance: button;
@@ -3369,30 +3370,31 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   position: relative;
+  color: #444444;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
-  .btn.btn_full_w {
+  .btn.btn_full_wt {
     width: 100%; }
   .btn:focus {
-    box-shadow: 0px 0px 0px 2px #b1b1b1;
+    box-shadow: 0px 0px 0px 2px #cccbcb;
     box-sizing: border-box; }
   .btn:hover {
-    background-color: #dadada !important; }
+    background-color: #dadada; }
 
 .btn_lg {
-  padding: 9px 14px;
-  font-size: 1.5em; }
+  padding: 8px 18px;
+  font-size: 1.25em; }
 
 .btn_md {
-  padding: 9px 13px;
-  font-size: 1.2em; }
+  padding: 7px 14px;
+  font-size: 1.1em; }
 
 .btn_sm {
-  padding: 7px 8px;
-  font-size: 0.90rem; }
+  padding: 6px 10px;
+  font-size: 0.9rem; }
 
 .btn_flat {
   border-radius: 0; }
@@ -3411,16 +3413,16 @@ button {
   background-color: #444bf8;
   color: white; }
   .btn_primary:hover {
-    background-color: #262cee !important;
+    background-color: #262cee;
     color: #fff; }
   .btn_primary:focus {
-    box-shadow: 0px 0px 0px 2px #7fbcff !important; }
+    box-shadow: 0px 0px 0px 2px #7fbcff; }
 
 .btn_success {
   background-color: #00c9a6;
   color: white; }
   .btn_success:hover {
-    background-color: #07a78c !important; }
+    background-color: #07a78c; }
   .btn_success:focus {
     box-shadow: 0px 0px 0px 2px #93d3a1; }
 
@@ -3480,7 +3482,7 @@ button {
     box-shadow: 0px 0px 0px 2px #ed99a1; }
 
 .btn_dark {
-  background-color: #3C3A3A !important;
+  background-color: #3c3a3a !important;
   color: white; }
   .btn_dark:hover {
     background-color: #222 !important; }
@@ -3541,12 +3543,12 @@ button {
 
 .btn_lineBtn_dark,
 .btn_border_primary {
-  border: 1px solid #3C3A3A;
+  border: 1px solid #3c3a3a;
   background-color: transparent;
-  color: #3C3A3A; }
+  color: #3c3a3a; }
   .btn_lineBtn_dark:hover,
   .btn_border_primary:hover {
-    background-color: #3C3A3A !important;
+    background-color: #3c3a3a !important;
     color: white !important; }
   .btn_lineBtn_dark:focus,
   .btn_border_primary:focus {
@@ -3572,8 +3574,8 @@ button {
   color: #b1b2b6; }
   .btn_lineBtn_light:hover,
   .btn_border_primary:hover {
-    background-color: white;
-    color: white; }
+    background-color: var(-internal-light-dark-color);
+    color: #444444; }
   .btn_lineBtn_light:focus,
   .btn_border_primary:focus {
     box-shadow: 0px 0px 0px 2px #b1b1b1; }
@@ -4261,7 +4263,7 @@ footer {
 .time, .date {
   margin: 0px 12px 0 0;
   font-size: 1rem;
-  color: #525252; }
+  color: #444444; }
   .time i, .date i {
     padding-right: 4px; }
 
@@ -4295,7 +4297,7 @@ footer {
       color: #111111;
       transition: .5s ease-in-out; }
       .card_body_title:hover {
-        color: #525252; }
+        color: #444444; }
     .card_body_sub {
       font-size: 1rem;
       font-weight: 500;
@@ -4303,7 +4305,7 @@ footer {
     .card_body_txt {
       line-height: 1.7rem;
       font-size: inherit;
-      color: #525252; }
+      color: #444444; }
     .card_body_icons {
       display: flex;
       margin: 12px 0 0 0; }
@@ -4344,7 +4346,7 @@ footer {
     font-size: 1rem; }
   .profile_txt p {
     font-size: 0.9rem;
-    color: #525252; }
+    color: #444444; }
 
 .profile_img img {
   width: 34px;
@@ -4362,7 +4364,7 @@ footer {
 .likes_icon, .message_icon, .share_icon {
   margin-right: 12px;
   cursor: pointer;
-  color: #525252; }
+  color: #444444; }
   .likes_icon i, .message_icon i, .share_icon i {
     font-size: 1.4rem; }
 
@@ -4388,12 +4390,12 @@ footer {
     padding: 12px; }
     .card_aligned_txt_link {
       font-size: 1rem;
-      color: #3C3A3A; }
+      color: #3c3a3a; }
       .card_aligned_txt_link:hover {
-        color: #3C3A3A; }
+        color: #3c3a3a; }
     .card_aligned_txt p {
       padding: 7px 0px;
-      color: #525252; }
+      color: #444444; }
 
 .card_planImg {
   display: flex;
@@ -4409,7 +4411,7 @@ footer {
     font-size: 1.4rem;
     color: #fff; }
     .card_planImg a:hover {
-      color: #525252; }
+      color: #444444; }
   .card_planImg .heart {
     color: #f12459;
     font-size: 1.3rem; }
